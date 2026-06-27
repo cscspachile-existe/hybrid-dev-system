@@ -1,0 +1,36 @@
+---
+description: Flujo híbrido — preferir local (Continue/Cline/Ollama) antes de Cursor cloud
+alwaysApply: true
+---
+
+# Hybrid Workflow Rule
+
+## Prioridad de herramientas
+
+1. **Continue + Ollama** — chat, explicaciones, edición simple, @Codebase
+2. **Cline + Ollama** — crear código, refactor multi-archivo, Plan→Act
+3. **Cursor Agent cloud** — solo escalación
+
+## Antes de usar créditos
+
+- Revisar si existe Rule en `.cursor/rules/` o patrón en `AGENTS.md`
+- Si existe → usar local, no cloud
+- Si créditos bajos (Settings → Usage) → solo local
+
+## Escalar a cloud solo si
+
+- No hay Rule/patrón documentado
+- Cline falló 2 veces en la misma tarea
+- Arquitectura nueva, seguridad, integración compleja
+
+## Después de resolver con cloud
+
+- Crear o actualizar Rule en `.cursor/rules/`
+- Actualizar `AGENTS.md` si hubo decisión de arquitectura
+- Commit en git
+
+## Config Cursor recomendada
+
+- Auto: OFF (control manual)
+- MAX Mode: OFF (ahorro)
+- Modelo cloud: Composer 2.5 Fast (día a día) o Sonnet (complejo)

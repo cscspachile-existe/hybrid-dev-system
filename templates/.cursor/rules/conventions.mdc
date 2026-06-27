@@ -1,0 +1,12 @@
+---
+description: Convenciones generales de código del proyecto
+alwaysApply: true
+---
+
+# Convenciones
+
+- TypeScript estricto, evitar `any`
+- Componentes funcionales con hooks
+- Validación con Zod en APIs
+- Tests para lógica crítica
+- Commits en español, código en inglés

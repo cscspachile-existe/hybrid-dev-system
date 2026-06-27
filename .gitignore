@@ -1,0 +1,6 @@
+dev-projects/
+*.log
+.env
+.env.*
+node_modules/
+.continue/config.json
