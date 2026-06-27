@@ -1,0 +1,8 @@
+{
+  "name": "hybrid-dev-pdf-gen",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "pdfkit": "^0.17.1"
+  }
+}

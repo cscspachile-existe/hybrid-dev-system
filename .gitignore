@@ -19,3 +19,6 @@ workspace/proyectos/**/node_modules/
 workspace/proyectos/**/.next/
 workspace/proyectos/**/dist/
 workspace/proyectos/**/vendor/
+
+# PDF generator deps
+scripts/pdf-gen/node_modules/
