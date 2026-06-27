@@ -9,17 +9,27 @@ Sistema híbrido de desarrollo: **Cursor + Ollama + Continue + Cline**.
 ## Estructura
 
 ```
-dev-projects/
-├── hybrid-dev-system/     ← Este repo (documentación, templates, scripts)
-└── [tus-proyectos]/        ← Cada proyecto con AGENTS.md + .cursor/rules/
+hybrid-dev-system/
+├── workspace/              ← Carpetas ordenadas (proyectos, docs, scripts…)
+│   ├── proyectos/          ← Código fuente
+│   ├── docs-usuario/       ← Manuales (aprender haciendo)
+│   ├── docs-agentes/       ← Contexto para IA
+│   ├── scripts/            ← Automatización
+│   ├── base-datos/         ← Schemas, migraciones
+│   ├── imagenes/           ← Capturas, diagramas
+│   ├── referencia/         ← Cheatsheets, links
+│   └── ejecutables/        ← Notas de tools instalados
+├── docs/                   ← Documentación técnica
+├── skills/                 ← Agentes Dev Muscle
+├── templates/              ← Plantillas nuevos proyectos
+└── scripts/                ← Setup Ollama, Cline, etc.
 ```
 
-## Inicio rápido
+## Inicio rápido (aprender haciendo)
 
-1. Ejecuta `scripts/setup-windows.ps1`
-2. Instala extensiones en Cursor: **Continue** y **Cline**
-3. Abre Cursor → chat con **Dev Muscle** (Skill: `dev-muscle-orchestrator`)
-4. Lee `docs/CURSOR-WORKFLOW.md` para el flujo diario
+1. Lee [workspace/docs-usuario/01-empezar-aqui.md](workspace/docs-usuario/01-empezar-aqui.md)
+2. Haz [workspace/docs-usuario/03-practica-ejercicio-1.md](workspace/docs-usuario/03-practica-ejercicio-1.md)
+3. Consulta [docs/ESQUEMA-HIBRIDO.md](docs/ESQUEMA-HIBRIDO.md) para la arquitectura
 
 ## Documentación
 

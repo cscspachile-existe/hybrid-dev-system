@@ -4,3 +4,18 @@ dev-projects/
 .env.*
 node_modules/
 .continue/config.json
+
+# Workspace — no subir binarios ni DBs pesadas
+workspace/ejecutables/*.exe
+workspace/ejecutables/*.msi
+workspace/ejecutables/*.zip
+workspace/base-datos/**/*.db
+workspace/base-datos/**/*.sqlite
+workspace/base-datos/**/*.sqlite3
+workspace/imagenes/**/*.psd
+
+# Proyectos — dependencias
+workspace/proyectos/**/node_modules/
+workspace/proyectos/**/.next/
+workspace/proyectos/**/dist/
+workspace/proyectos/**/vendor/
