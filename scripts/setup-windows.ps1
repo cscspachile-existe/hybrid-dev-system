@@ -5,7 +5,7 @@
 #>
 
 $ErrorActionPreference = "Stop"
-$Root = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
+$Root = Split-Path -Parent $PSScriptRoot
 $Templates = Join-Path $Root "templates"
 
 Write-Host "=== Hybrid Dev System Setup ===" -ForegroundColor Cyan
