@@ -93,7 +93,7 @@ def main(argv: list[str] | None = None) -> int:
         if not excel.exists():
             print(f"No existe el Excel: {excel}", file=sys.stderr)
             print(
-                "Crea uno con: python generar_cotizacion.py plantilla --ejemplo",
+                "Crea uno con: python3 generar_cotizacion.py plantilla --ejemplo",
                 file=sys.stderr,
             )
             return 1

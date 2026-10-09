@@ -296,7 +296,7 @@ def crear_plantilla_excel(
         "1. Completa la hoja Cotizacion (id_proceso y cliente son obligatorios).",
         "2. Agrega o edita filas en Items (precio_unitario_neto = neto, sin IVA).",
         "3. Emisor y Condiciones ya vienen con datos CSC; cámbialos solo si aplica.",
-        "4. Guarda el archivo y ejecuta: python generar_cotizacion.py datos/tu-archivo.xlsx",
+        "4. Guarda el archivo y ejecuta: python3 generar_cotizacion.py datos/tu-archivo.xlsx",
         "5. El DOCX sale en carpeta salida/ listo para Mercado Público.",
         "6. No borres los nombres de las hojas ni los nombres de campo (columna A).",
         "7. Subtotales, IVA 19% y total se calculan solos al generar el documento.",

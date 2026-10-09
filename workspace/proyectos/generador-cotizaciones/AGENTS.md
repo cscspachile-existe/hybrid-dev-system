@@ -12,8 +12,8 @@ Formato basado en la oferta CSC SPA (secciones 1–5 + tablas emisor/ítems).
 ## Comandos
 ```bash
 pip install -r requirements.txt
-python generar_cotizacion.py plantilla --ejemplo
-python generar_cotizacion.py datos/ejemplo-5178-4975-COT26.xlsx
+python3 generar_cotizacion.py plantilla --ejemplo
+python3 generar_cotizacion.py datos/ejemplo-5178-4975-COT26.xlsx
 ```
 
 ## No hacer

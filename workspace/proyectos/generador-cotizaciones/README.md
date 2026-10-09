@@ -29,20 +29,21 @@ El script calcula solo: subtotal neto, IVA y total bruto.
 
 ```bash
 cd workspace/proyectos/generador-cotizaciones
-pip install -r requirements.txt
+pip install -r requirements.txt   # o: pip3 install -r requirements.txt
 
+# Usa python3 (Linux/Cloud Agent). En Windows: py o python.
 # 1) Crear Excel de ejemplo (Universidad de Chile / COT26)
-python generar_cotizacion.py plantilla --ejemplo -o datos/ejemplo-5178-4975-COT26.xlsx
+python3 generar_cotizacion.py plantilla --ejemplo -o datos/ejemplo-5178-4975-COT26.xlsx
 
 # 2) Crear Excel vacío para una cotización nueva
-python generar_cotizacion.py plantilla -o datos/nueva-cotizacion.xlsx
+python3 generar_cotizacion.py plantilla -o datos/nueva-cotizacion.xlsx
 
 # 3) Generar el DOCX
-python generar_cotizacion.py datos/ejemplo-5178-4975-COT26.xlsx
+python3 generar_cotizacion.py datos/ejemplo-5178-4975-COT26.xlsx
 
 # 4) (Opcional) Desde SQLite
 # sqlite3 datos/cotizaciones.db < schema/cotizaciones.sql
-# python generar_cotizacion.py desde-db datos/cotizaciones.db 5178-4975-COT26
+# python3 generar_cotizacion.py desde-db datos/cotizaciones.db 5178-4975-COT26
 ```
 
 Salida: `salida/COTIZACION-<id_proceso>.docx`
