@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+salida/*.docx
+!salida/.gitkeep
+~$*.xlsx
+*.sqlite
+*.db
+.DS_Store
+plantillas/referencia-original.docx
