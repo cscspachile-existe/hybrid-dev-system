@@ -16,6 +16,7 @@ mi-proyecto/
 
 ```
 proyectos/
+├── generador-cotizaciones/   ← Excel/BD → DOCX Mercado Público
 ├── mi-sitio-wordpress/
 ├── api-rest-node/
 └── landing-nextjs/
